@@ -1,0 +1,92 @@
+{% load static %}
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/userindex.css' %}">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+      <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body  style="background-image: url(/static/images/001.jpg)">
+
+<div class="header" >
+    <ul class="nav">
+        <h5  style="color: #cccccc">
+            {{ name}}(admin)
+        |<a href="{% url 'userinformation' %}" style="color: #cccccc">个人中心</a>|<a href="{% url 'login' %}" style="color: #cccccc">登出</a></h5>
+    </ul>
+</div>
+<br/><br/><br/><br/>
+<div class="main-content" style="align-content: center; height: 300px; width: 560px" id="use">
+   <div class="modal-body">
+        <div class="row">
+            <div class="span5 offset2">
+            已损坏：<button class="btn btn-warning"></button>&nbsp;使用中：<button class="btn btn-success"></button> &nbsp;预定中：<button class="btn btn-primary"></button>&nbsp;空座位：<button class="btn"></button></button></div>
+            <div>
+        </div>
+            <br/><br/>
+            <form class="form-signin" action="/admindeel/" method="post">
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.0}}" name="id" value="111">{{ sta.0 }}</button>&nbsp;&nbsp;<button class="{{ state.1}}" name="id" value="112">{{ sta.1 }}</button>&nbsp;<button class="{{ state.2}}" name="id" value="113">{{ sta.2 }}</button></div>
+                <div class="span2 "><button class="{{ state.24}}" name="id" value="211">{{ sta.24 }}</button>&nbsp;&nbsp;<button class="{{ state.25}}" name="id" value="212">{{ sta.25 }}</button>&nbsp;<button class="{{ state.26}}" name="id" value="213">{{ sta.26 }}</button></div>
+                <div class="span2"><button class="{{ state.48}}" name="id" value="311">{{ sta.48 }}</button>&nbsp;&nbsp;<button class="{{ state.49}}" name="id" value="312">{{ sta.49 }}</button>&nbsp;<button class="{{ state.50}}" name="id" value="313">{{ sta.50 }}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.3}}" name="id" value="121">{{ sta.3 }}</button>&nbsp;&nbsp;<button class="{{ state.4}}" name="id" value="122">{{ sta.4}}</button>&nbsp;<button class="{{ state.5}}" name="id" value="123">{{ sta.5 }}</button></div>
+                <div class="span2 "><button class="{{ state.27}}" name="id" value="221">{{ sta.27}}</button>&nbsp;&nbsp;<button class="{{ state.28}}" name="id" value="222">{{ sta.28 }}</button>&nbsp;<button class="{{ state.29}}" name="id" value="223">{{ sta.29 }}</button></div>
+                <div class="span2"><button class="{{ state.51}}" name="id" value="321">{{ sta.51 }}</button>&nbsp;&nbsp;<button class="{{ state.52}}" name="id" value="322">{{ sta.52 }}</button>&nbsp;<button class="{{ state.53}}" name="id" value="323">{{ sta.53 }}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.6}}" name="id" value="131">{{ sta.6 }}</button>&nbsp;&nbsp;<button class="{{ state.7}}" name="id" value="132">{{ sta.7 }}</button>&nbsp;<button class="{{ state.8}}" name="id" value="133">{{ sta.8}}</button></div>
+                <div class="span2 "><button class="{{ state.30}}" name="id" value="231">{{ sta.30}}</button>&nbsp;&nbsp;<button class="{{ state.31}}" name="id" value="232">{{ sta.31}}</button>&nbsp;<button class="{{ state.32}}" name="id" value="233">{{ sta.32}}</button></div>
+                <div class="span2"><button class="{{ state.54}}" name="id" value="331">{{ sta.54}}</button>&nbsp;&nbsp;<button class="{{ state.55}}" name="id" value="332">{{ sta.55}}</button>&nbsp;<button class="{{ state.56}}" name="id" value="333">{{ sta.56}}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.9}}" name="id" value="141">{{ sta.9}}</button>&nbsp;&nbsp;<button class="{{ state.10}}" name="id" value="142">{{ sta.10}}</button>&nbsp;<button class="{{ state.11}}" name="id" value="143">{{ sta.11}}</button></div>
+                <div class="span2 "><button class="{{ state.33}}" name="id" value="241">{{ sta.33}}</button>&nbsp;&nbsp;<button class="{{ state.34}}" name="id" value="242">{{ sta.34}}</button>&nbsp;<button class="{{ state.35}}" name="id" value="243">{{ sta.35}}</button></div>
+                <div class="span2"><button class="{{ state.57}}" name="id" value="341">{{ sta.57}}</button>&nbsp;&nbsp;<button class="{{ state.58}}" name="id" value="342">{{ sta.58}}</button>&nbsp;<button class="{{ state.59}}" name="id" value="343">{{ sta.59}}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.12}}" name="id" value="151">{{ sta.12}}</button>&nbsp;&nbsp;<button class="{{ state.13}}" name="id" value="152">{{ sta.13}}</button>&nbsp;<button class="{{ state.14}}" name="id" value="153">{{ sta.14}}</button></div>
+                <div class="span2 "><button class="{{ state.36}}" name="id" value="251">{{ sta.36}}</button>&nbsp;&nbsp;<button class="{{ state.37}}" name="id" value="252">{{ sta.37}}</button>&nbsp;<button class="{{ state.38}}" name="id" value="253">{{ sta.39}}</button></div>
+                <div class="span2"><button class="{{ state.60}}" name="id" value="351">{{ sta.60}}</button>&nbsp;&nbsp;<button class="{{ state.61}}" name="id" value="352">{{ sta.61}}</button>&nbsp;<button class="{{ state.62}}" name="id" value="353">{{ sta.62}}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.15}}" name="id" value="161">{{ sta.15}}</button>&nbsp;&nbsp;<button class="{{ state.16}}" name="id" value="162">{{ sta.16}}</button>&nbsp;<button class="{{ state.17}}" name="id" value="163">{{ sta.17}}</button></div>
+                <div class="span2 "><button class="{{ state.39}}" name="id" value="261">{{ sta.39}}</button>&nbsp;&nbsp;<button class="{{ state.40}}" name="id" value="262">{{ sta.40}}</button>&nbsp;<button class="{{ state.41}}" name="id" value="263">{{ sta.41}}</button></div>
+                <div class="span2"><button class="{{ state.63}}" name="id" value="361">{{ sta.63}}</button>&nbsp;&nbsp;<button class="{{ state.64}}" name="id" value="362">{{ sta.64}}</button>&nbsp;<button class="{{ state.65}}" name="id" value="363">{{ sta.65}}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.18}}" name="id" value="171">{{ sta.18}}</button>&nbsp;&nbsp;<button class="{{ state.19}}" name="id" value="172">{{ sta.19}}</button>&nbsp;<button class="{{ state.20}}" name="id" value="173">{{ sta.20}}</button></div>
+                <div class="span2 "><button class="{{ state.42}}" name="id" value="271">{{ sta.42}}</button>&nbsp;&nbsp;<button class="{{ state.43}}" name="id" value="272">{{ sta.43}}</button>&nbsp;<button class="{{ state.44}}" name="id" value="273">{{ sta.44}}</button></div>
+                <div class="span2"><button class="{{ state.66}}" name="id" value="371">{{ sta.66}}</button>&nbsp;&nbsp;<button class="{{ state.67}}" name="id" value="372">{{ sta.67}}</button>&nbsp;<button class="{{ state.68}}" name="id" value="373">{{ sta.68}}</button></div>
+            </div>
+            <div class="row">
+                <div class="span1"></div>
+                <div class="span2"><button class="{{ state.21}}" name="id" value="181">{{ sta.21}}</button>&nbsp;&nbsp;<button class="{{ state.22}}" name="id" value="182">{{ sta.22}}</button>&nbsp;<button class="{{ state.23}}" name="id" value="183">{{ sta.23}}</button></div>
+                <div class="span2 "><button class="{{ state.45}}" name="id" value="281">{{ sta.45}}</button>&nbsp;&nbsp;<button class="{{ state.46}}" name="id" value="282">{{ sta.46}}</button>&nbsp;<button class="{{ state.47}}" name="id" value="283">{{ sta.47}}</button></div>
+                <div class="span2"><button class="{{ state.69}}" name="id" value="381">{{ sta.69}}</button>&nbsp;&nbsp;<button class="{{ state.70}}" name="id" value="382">{{ sta.70}}</button>&nbsp;<button class="{{ state.71}}" name="id" value="383">{{ sta.71}}</button></div>
+            </div>
+        </div>
+        </form>
+         {% if messages %}
+        <script>
+            {% for msg in messages %}
+                alert('{{ msg.message }}');
+            {% endfor %}
+        </script>
+    {% endif %}
+  </div>
+</div>
+
+</body>
+
+</html>
